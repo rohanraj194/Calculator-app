@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="61dp"
+        android:text="This Calculator is developed by Rohan Raj"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50sp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:gravity="end"
+        android:paddingRight="10dp"
+        android:layout_above="@id/output" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="100dp"
+        android:textColor="#2C437C"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:layout_above="@id/ll1"/>
+
+
+    <LinearLayout
+      android:id="@+id/ll1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="#682723"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_clear"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/clear"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:id="@+id/btn_percent"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/percentage"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/backspace"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:id="@+id/btn_divide"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/division"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp"
+          android:gravity="center">
+
+          <ImageView
+              android:id="@+id/btn_7"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/circle_7"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_8"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/circle_8"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_9"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/circle_9"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_multiply"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/multiply"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp"
+          android:gravity="center">
+
+          <ImageView
+              android:id="@+id/btn_4"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/circle_4"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_5"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/circle_5"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_6"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/circle_6"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_minus"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/minus"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp"
+          android:gravity="center">
+
+          <ImageView
+              android:id="@+id/btn_1"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/circle_1"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_2"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/circle_2"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_3"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/circle_3"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_add"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/plus"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp"
+          android:gravity="center">
+
+          <ImageView
+              android:id="@+id/btn_00"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/btn_00r"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_0"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/zero"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_dot"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/dot"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+          <ImageView
+              android:id="@+id/btn_equal"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@drawable/equal"
+              android:layout_marginStart="25dp"
+              android:layout_marginLeft="25dp"/>
+
+
+
+
+
+
+
+
+
+
+      </LinearLayout>
+
+
+  </LinearLayout>
+
+
+</RelativeLayout>
