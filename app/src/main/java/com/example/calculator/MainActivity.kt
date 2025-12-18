@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+    
 //        enableEdgeToEdge()
  //       setContentView(R.layout.activity_main)
 //        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -137,37 +138,3 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-//        //Easy way for equal button by chatGpt
-//        binding.btnEqual.setOnClickListener {
-//            try {
-//
-//                val expression = ExpressionBuilder(binding.input.text.toString()).build()
-//                val result = expression.evaluate()
-//                val longResult = result.toLong()
-//
-//                binding.output.text =
-//                    if (result == longResult.toDouble()) longResult.toString()
-//                    else result.toString()
-//
-//            } catch (e: Exception) {
-//                binding.output.text = "Error"
-//            }
-
-
-//        binding.btnEqual.setOnClickListener {
-//          val expression= ExpressionBuilder(binding.input.text.toString()).build()
-//            val result=expression.evaluate()
-//            val longresult = result.toLong()
-//
-//            if (result== longresult.toDouble()){
-//                binding.output.text=longresult.toString()
-//            } else{
-//                binding.output.text=result.toString()
-//            }
-//
-//            catch (e.Exception){
-//                binding.output.text="Error"
-//            }
-        }
-    }
