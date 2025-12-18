@@ -68,7 +68,7 @@
             android:id="@+id/btn_percent"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:background="@drawable/percentage"
+            android:background="@drawable/zero"
             android:layout_marginStart="25dp"
             android:layout_marginLeft="25dp"/>
 
